@@ -1,50 +1,22 @@
-# 忽略所有沒有副檔名的執行檔 (Linux 特色)
+### C++ 執行檔與編譯產物 ###
+# 忽略所有沒有副檔名的檔案 (Linux 下常見的執行檔格式)
 *
 !*.*
 
-# 或是手動指定忽略
-hello
-
-# 忽略 VS Code 設定（可選）
-.vscode/
-# Prerequisites
-*.d
-
-# Compiled Object files
-*.slo
-*.lo
+# 忽略常見的執行檔與目標檔
 *.o
 *.obj
-
-# Precompiled Headers
-*.gch
-*.pch
-
-# Linker files
-*.ilk
-
-# Debugger Files
-*.pdb
-
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
-
-# Fortran module files
-*.mod
-*.smod
-
-# Compiled Static libraries
-*.lai
-*.la
-*.a
-*.lib
-
-# Executables
-*.exe
 *.out
-*.app
+*.exe
 
-# debug information files
-*.dwo
+### VS Code 設定與暫存 ###
+.vscode/
+.history/
+*.log
+
+### 作業系統垃圾 ###
+.DS_Store
+Thumbs.db
+
+### Docker 暫存 ###
+.dockerignore
